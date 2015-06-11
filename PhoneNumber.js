@@ -283,6 +283,10 @@ var PhoneNumber = (function (dataBase) {
   function ParseNumber(number, defaultRegion) {
     var ret;
 
+    if(defaultRegion === 'UK') {
+      defaultRegion = 'GB';
+    }
+
     // Remove formating characters and whitespace.
     number = PhoneNumberNormalizer.Normalize(number);
 
