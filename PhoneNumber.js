@@ -336,9 +336,9 @@ var PhoneNumber = (function (dataBase) {
 
     // Now lets see if maybe its an international number after all, but
     // without '+' or the international prefix.
-    ret = ParseInternationalNumber(number)
-    if (ret)
-      return ret;
+    // ret = ParseInternationalNumber(number)
+    // if (ret)
+    //   return ret;
 
     // If the number matches the possible numbers of the current region,
     // return it as a possible number.
