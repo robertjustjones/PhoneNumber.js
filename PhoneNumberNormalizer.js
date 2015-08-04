@@ -46,3 +46,5 @@ var PhoneNumberNormalizer = (function() {
     Normalize: NormalizeNumber
   };
 })();
+
+exports.PhoneNumberNormalizer = PhoneNumberNormalizer;

@@ -1,6 +1,9 @@
 /* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab: */
 
+var PHONE_NUMBER_META_DATA = require('cloud/vendor/PhoneNumber.js/PhoneNumberMetadata.js').PHONE_NUMBER_META_DATA;
+var PhoneNumberNormalizer = require('cloud/vendor/PhoneNumber.js/PhoneNumberNormalizer.js').PhoneNumberNormalizer;
+
 var PhoneNumber = (function (dataBase) {
   // Use strict in our context only - users might not want it
   'use strict';
@@ -365,3 +368,5 @@ var PhoneNumber = (function (dataBase) {
     Parse: ParseNumber,
   };
 })(PHONE_NUMBER_META_DATA);
+
+exports.PhoneNumber = PhoneNumber;
